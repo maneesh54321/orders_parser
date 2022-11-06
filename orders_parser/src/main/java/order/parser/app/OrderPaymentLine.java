@@ -1,7 +1,9 @@
 package order.parser.app;
 
 public class OrderPaymentLine {
+
     private Integer no;
+
     private String line;
 
     public OrderPaymentLine(Integer no, String line) {
