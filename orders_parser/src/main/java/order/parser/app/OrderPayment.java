@@ -4,15 +4,22 @@ import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
 public class OrderPayment {
+
     @JsonAlias("orderId")
     private Integer id;
+
     private Double amount;
+
     private String currency;
+
     private String comment;
+
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String filename;
+
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Integer line;
+
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String result;
 
